@@ -3,7 +3,6 @@ package com.app.service;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,14 +24,15 @@ public class PaymentEventService {
     public PaymentEvent processWebhook(String payload) {
         
     	
-			PaymentDetail paymentDetail = jsonConverterUtility.convertStringToObject(payload,PaymentDetail.class);
-		
-			if(paymentDetail == null) {
-				throw new InvalidJsonException("Invalid Json");
-			}
+		PaymentDetail paymentDetail = jsonConverterUtility.convertStringToObject(payload,PaymentDetail.class);
+	
+//json invalid check
+		if(paymentDetail == null) {
+			throw new InvalidJsonException("Invalid Json");
+		}
     	
 			
-//         Deduplication check
+//Dedupe check
         if (repo.existsById(paymentDetail.getId())) {
         	throw new InvalidJsonException("Event id record already exist = "+repo.findById(paymentDetail.getId()).get());
         }
