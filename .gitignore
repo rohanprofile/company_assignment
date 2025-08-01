@@ -1,0 +1,47 @@
+# === STS / Eclipse ===
+.project
+.classpath
+.settings/
+.apt_generated/
+.factorypath
+.metadata/
+bin/
+target/
+
+# === IntelliJ IDEA (if opened in IntelliJ) ===
+.idea/
+*.iml
+*.iws
+
+# === Mac OS ===
+.DS_Store
+
+# === Windows ===
+Thumbs.db
+
+# === Logs ===
+*.log
+logs/
+
+# === OS Specific ===
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# === Maven ===
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# === Temporary files ===
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# === Environment config ===
+.env
+.env.*
+
+# === Others ===
+/out/
