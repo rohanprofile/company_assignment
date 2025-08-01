@@ -47,11 +47,17 @@ curl --location --request POST 'http://localhost:8080/webhook/payments' \
 <img width="1968" height="1210" alt="image" src="https://github.com/user-attachments/assets/c348d45d-7845-4309-a26d-b65d21125400" />
 
 
+**Dudupe Check
+**
+<img width="1960" height="1327" alt="image" src="https://github.com/user-attachments/assets/b0e7fb90-c5bd-480d-a669-f40720a9d8e6" />
+
+
 
 **Database 
 **
 
 <img width="2076" height="1025" alt="image" src="https://github.com/user-attachments/assets/7a7e550b-0735-44d0-8544-162f1c94acd3" />
+
 
 
   
